@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysappaccess">
+	<description></description>
+	<menu>
+	    <node code="sysappaccess010000" parentCode="sys" name="应用访问管理" type="Catalog" showOrder="3" icon="system-c-application-icon" newpage="false">
+	       <nodes>
+				<node code="sysappaccess010100" name="用户应用访问管理" showOrder="1" newpage="false" type="Action" icon="system-m-app-register-icon">
+					<action>
+						/reps/sys/userappaccess/list.mvc;/reps/sys/userappaccess/userapplist.mvc;/reps/sys/userappaccess/userorganizeapplist.mvc;
+						/reps/sys/userappaccess/chooseapp.mvc;/reps/sys/userappaccess/chooseorganize.mvc;
+						/reps/sys/userappaccess/setuserapp.mvc;/reps/sys/userappaccess/setuserorganizeapp.mvc;
+						/reps/sys/userappaccess/deleteuserapp.mvc;/reps/sys/userappaccess/deleteuserorganize.mvc
+					</action>
+				</node>
+			</nodes>
+	    </node>
+	</menu>
+</module>

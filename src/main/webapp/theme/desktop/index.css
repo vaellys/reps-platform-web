@@ -1,0 +1,1084 @@
+@charset "utf-8";
+.default-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/default-icon.gif) no-repeat;
+}
+
+/*** 平台管理 ***/
+/* 导航栏系统图标 */
+.system-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/system.png) no-repeat;
+}
+
+.system-m-organize-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-organize.gif) no-repeat;
+}
+
+.system-m-person-info-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-person-info.png) no-repeat;
+}
+
+.system-m-user-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-user.gif) no-repeat;
+}
+
+.system-m-account-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-account.gif) no-repeat;
+}
+
+.system-m-variable-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-variable.gif) no-repeat;
+}
+
+.system-m-menu-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-menu.gif) no-repeat;
+}
+
+.system-m-dictionary-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-dictionary.png) no-repeat;
+}
+
+.system-m-customrole-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-customrole.png) no-repeat;
+}
+
+/* 应用注册 */
+.system-m-app-register-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/system-m-app-register.gif) no-repeat;
+}
+
+.log-m-operate-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/log-m-operate.gif) no-repeat;
+}
+
+.log-m-login-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/log-m-login.gif) no-repeat;
+}
+
+/* 身份权限 */
+.privilege-m-position-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/privilege-m-position.gif) no-repeat;
+}
+
+/* 角色权限 */
+.privilege-m-role-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/privilege-m-role.gif) no-repeat;
+}
+
+/*** 分级管理 ***/
+/* 导航栏系统图标 */
+.level-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/level.png) no-repeat;
+}
+
+/* 分级功能管理 */
+.level-m-function-icon {
+	width: 50px;
+	height: 50px;
+	margin: 5px auto;
+	outline: none;
+	background: url(icon/level-m-function.gif) no-repeat;
+}
+
+
+/*** 学校管理 ***/
+/* 导航栏系统图标 */
+.school-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/school.png) no-repeat;
+}
+
+.school-m-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/school-m.gif) no-repeat;
+}
+
+.school-m-classes-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/school-m-classes.gif) no-repeat;
+}
+
+.school-m-student-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/school-m-student.gif) no-repeat;
+}
+
+.school-m-teacher-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/school-m-teacher.gif) no-repeat;
+}
+
+/*** 数据校园管理 ***/
+/* 导航栏系统图标 */
+.school_yun-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/school_yun.png) no-repeat;
+}
+
+.knowledge-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/knowledge-icon.gif) no-repeat;
+}
+
+.book-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/book-icon.gif) no-repeat;
+}
+
+.person-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/person-icon.gif) no-repeat;
+}
+
+/*** 人人通 ***/
+/* 导航栏系统图标 */
+.rrt-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/rrt.png) no-repeat;
+}
+
+/*** 教学质量检测 ***/
+/* 导航栏系统图标 */
+.jxzljc-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/jxzljc.png) no-repeat;
+}
+
+.jxzljc-m-page-catelog-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-page-catelog.png) no-repeat;
+}
+
+.jxzljc-m-question-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-question.png) no-repeat;
+}
+
+.jxzljc-m-myschool-setting-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-myschool-setting.png) no-repeat;
+}
+
+.jxzljc-m-school-setting-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-school-setting.png) no-repeat;
+}
+
+.jxzljc-m-item-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-item.png) no-repeat;
+}
+
+.jxzljc-m-item-view-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/jxzljc-m-item-view.png) no-repeat;
+}
+
+/*** 资源管理 ***/
+/* 导航栏系统图标 */
+.resource-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource.png) no-repeat;
+}
+
+.resource-m-folder-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-folder.png) no-repeat;
+}
+
+.resource-m-space-type-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-space-type.png) no-repeat;
+}
+
+.resource-m-space-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-space.png) no-repeat;
+}
+
+.resource-m-list-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-list.png) no-repeat;
+}
+
+.resource-m-words-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-words.png) no-repeat;
+}
+
+.resource-m-book-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-book.png) no-repeat;
+}
+
+.resource-m-recycle-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-recycle.png) no-repeat;
+}
+
+.resource-m-picture-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-picture.png) no-repeat;
+}
+
+.resource-m-link-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-link.png) no-repeat;
+}
+
+.resource-m-commended-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-commended.png) no-repeat;
+}
+
+.resource-m-check-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-check.png) no-repeat;
+}
+
+.resource-m-space-school-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-space-school.png) no-repeat;
+}
+
+.resource-m-tj-school-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-tj-school.png) no-repeat;
+}
+
+.resource-m-tj-space-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-tj-space.png) no-repeat;
+}
+
+.resource-m-tj-res-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/resource-m-tj-res.png) no-repeat;
+}
+
+/*** 内容发布 ***/
+/* 导航栏系统图标 */
+.cms-icon{
+	width:45px;
+	height:45px;
+	margin:0px auto;
+	outline:none;
+	background:url(icon/cms.png) no-repeat;
+}
+
+.cms-m-site-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-site.png) no-repeat;
+}
+
+.cms-m-model-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-model.png) no-repeat;
+}
+
+.cms-m-channel-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-channel.png) no-repeat;
+}
+
+.cms-m-ctype-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-ctype.png) no-repeat;
+}
+
+.cms-m-content-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-content.png) no-repeat;
+}
+
+.cms-m-check-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-check.png) no-repeat;
+}
+
+.cms-m-publish-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-publish.png) no-repeat;
+}
+
+.cms-m-site-auth-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-site-auth.png) no-repeat;
+}
+
+.cms-m-html-home-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-html-home.png) no-repeat;
+}
+
+.cms-m-html-channel-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-html-channel.png) no-repeat;
+}
+
+.cms-m-html-content-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-html-content.png) no-repeat;
+}
+
+.cms-m-template-res-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-template-res.png) no-repeat;
+}
+
+.cms-m-template-tpl-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-template-tpl.png) no-repeat;
+}
+
+/*** 新闻报送 ***/
+/* 导航栏系统图标 */
+.cms-news-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/cms-news.png) no-repeat;
+}
+
+.cms-m-news-collect-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-news-collect.png) no-repeat;
+}
+
+.cms-m-news-edit-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-news-edit.png) no-repeat;
+}
+
+.cms-m-news-check-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-news-check.png) no-repeat;
+}
+
+.cms-m-news-publish-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/cms-m-news-publish.png) no-repeat;
+}
+
+/*** 领导信箱 ***/
+/* 导航栏系统图标 */
+.cms-mailbox-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/cms-mailbox.png) no-repeat;
+}
+
+/*** 活动专题 ***/
+/* 导航栏系统图标 */
+.act-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/act.png) no-repeat;
+}
+
+.act-m-acttype-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/act-m-acttype.png) no-repeat;
+}
+
+.act-m-rewardtype-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/act-m-rewardtype.png) no-repeat;
+}
+
+.act-m-actmanager-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/act-m-actmanager.png) no-repeat;
+}
+
+.act-m-worksselect-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/act-m-worksselect.png) no-repeat;
+}
+
+.act-m-notice-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/act-m-notice.png) no-repeat;
+}
+
+/*** 教师人事 ***/
+/* 导航栏系统图标 */
+.jsrs-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/jsrs.png) no-repeat;
+}
+
+.jsrs-m-workhistory-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-workhistory.png) no-repeat;
+}
+
+.jsrs-m-edu-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-edu.png) no-repeat;
+}
+
+.jsrs-m-certificate-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-certificate.png) no-repeat;
+}
+
+.jsrs-m-profession-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-profession.png) no-repeat;
+}
+
+.jsrs-m-article-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-article.png) no-repeat;
+}
+
+.jsrs-m-check-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-check.png) no-repeat;
+}
+
+.jsrs-m-transfer-apply-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-transfer-apply.png) no-repeat;
+}
+
+.jsrs-m-transfer-check-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-transfer-check.png) no-repeat;
+}
+
+.jsrs-m-teacher-info-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jsrs-m-teacher-info.png) no-repeat;
+}
+
+/*** 招生学籍 ***/
+/* 导航栏系统图标 */
+.zsxj-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/zsxj.png) no-repeat;
+}
+
+.zsxj-m-notice-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/zsxj-m-notice.png) no-repeat;
+}
+
+.zsxj-m-check-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/zsxj-m-check.png) no-repeat;
+}
+
+.zsxj-m-xjxx-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/zsxj-m-xjxx.png) no-repeat;
+}
+
+/*** 网络教研 ***/
+/* 导航栏系统图标 */
+.wljy-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/wljy.png) no-repeat;
+}
+
+.wljy-m-jyzfl-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/wljy-m-jyzfl.png) no-repeat;
+}
+
+.wljy-m-jyzgl-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/wljy-m-jyzgl.png) no-repeat;
+}
+
+/*** 名师工作室 ***/
+/* 导航栏系统图标 */
+.studio-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/studio.png) no-repeat;
+}
+
+.studio-m-catalog-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/studio-m-catalog.png) no-repeat;
+}
+
+.studio-m-manage-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/studio-m-manage.png) no-repeat;
+}
+
+/*** 课题管理 ***/
+/* 导航栏系统图标 */
+.keti-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/keti.png) no-repeat;
+}
+
+.keti-m-keti-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/keti-m-keti.png) no-repeat;
+}
+
+.keti-m-catalog-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/keti-m-catalog.png) no-repeat;
+}
+
+/*** 问卷调查管理 ***/
+/* 导航栏系统图标 */
+.survey-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/survey.png) no-repeat;
+}
+
+/*** 校园足球管理 ***/
+/* 导航栏系统图标 */
+.football-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/football.png) no-repeat;
+}
+
+/*** 数据标准 ***/
+/* 导航栏系统图标 */
+.standard-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/standard.png) no-repeat;
+}
+
+/* 数据标准  */
+.standard-m-objectgroup-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/standard-m-objectgroup.png) no-repeat;
+}
+
+.standard-m-fielddefine-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/standard-m-fielddefine.gif) no-repeat;
+}
+
+.standard-m-dataobject-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/standard-m-dataobject.gif) no-repeat;
+}
+
+/*** 数据维护 ***/
+/* 导航栏系统图标 */
+.dm-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/dm.png) no-repeat;
+}
+
+/*** 数据交换管理 ***/
+/* 导航栏系统图标 */
+.dsc-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/dsc.png) no-repeat;
+}
+
+.dsc-m-agent-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-agent.gif) no-repeat;
+}
+
+.dsc-m-agentprivilege-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-agentprivilege.gif) no-repeat;
+}
+
+.dsc-m-messagelog-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-messagelog.gif) no-repeat;
+}
+
+.dsc-m-contextdata-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-contextdata.png) no-repeat;
+}
+
+.dsc-m-stat-agent-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-stat-agent.gif) no-repeat;
+}
+
+.dsc-m-stat-activity-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/dsc-m-stat-activity.gif) no-repeat;
+}
+
+/*** 直报系统 ***/
+/* 导航栏系统图标 */
+.drp-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/drp.png) no-repeat;
+}
+
+.drp-m-item-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-item.png) no-repeat;
+}
+
+.drp-m-template-create-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-template-create.png) no-repeat;
+}
+
+.drp-m-task-send-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-task-send.png) no-repeat;
+}
+
+.drp-m-task-receive-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-task-receive.png) no-repeat;
+}
+
+.drp-m-transdata-collect-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-transdata-collect.png) no-repeat;
+}
+
+.drp-m-senddata-collect-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-senddata-collect.png) no-repeat;
+}
+
+.drp-m-report-search-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-report-search.png) no-repeat;
+}
+
+.drp-m-report-stat-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/drp-m-report-stat.png) no-repeat;
+}
+
+/*** 全民档案 ***/
+/* 导航栏系统图标 */
+.qmda-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/qmda.png) no-repeat;
+}
+
+
+
+
+/*** 其他管理 ***/
+/* 导航栏系统图标 */
+.other-icon{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+	background:url(icon/other.png) no-repeat;
+}
+/* 应用市场管理 */
+.appmart-m-manage-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/appmart-m-manage.png) no-repeat;
+}
+.appmart-m-comment-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/appmart-m-comment.png) no-repeat;
+}
+
+/* 微课管理 */
+.weike-m-school-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/weike-m-school.png) no-repeat;
+}
+.weike-m-city-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/weike-m-city.png) no-repeat;
+}
+/* 公告管理 */
+.notice-m-manage-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/notice-m-manage.png) no-repeat;
+}
+/* 稿件管理 */
+.wljy-m-lgzxl-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/gaojian.png) no-repeat;
+}
+/* 教研成果管理 */
+.wljy-m-jycgl-icon{
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	background:url(icon/jycg.png) no-repeat;
+}
+
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sys" title="平台管理" showOrder="10" icon="system-icon">
+	<description></description>
+	<menu>
+		<node code="sys010000" name="系统管理" type="Catalog" showOrder="1" icon="system-c-icon" newpage="false">
+			<nodes>
+				<node code="sys010100" name="组织机构" showOrder="1" newpage="false" type="Action" icon="system-m-organize-icon">
+					<action>/reps/sys/organize/index.mvc;/reps/sys/organize/list.mvc</action>
+					<nodes>
+						<node code="sys010101" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/organize/toadd.mvc;/reps/sys/organize/add.mvc</action>
+						</node>
+						<node code="sys010102" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/organize/toedit.mvc;/reps/sys/organize/edit.mvc</action>
+						</node>
+						<node code="sys010103" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/sys/organize/delete.mvc</action>
+						</node>
+						<node code="sys010104" name="查看" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/sys/organize/showdetail.mvc;/reps/sys/organize/showwithperson.mvc</action>
+						</node>
+						<!--
+						<node code="sys010106" name="同步机构信息到OCS" showOrder="6" newpage="false" type="Operate">
+							<action>/ocs/synchronous/organize.mvc</action>
+						</node>
+						-->
+						<node code="sys010107" name="添加人员" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/sys/organize/toaddperson.mvc;/reps/sys/organize/addperson.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<!--
+				<node code="sys010200" name="机构体系管理" showOrder="2" newpage="false" type="Action">
+					<action>/reps/sys/organize/type/list.mvc</action>
+					<nodes>
+						<node code="sys010201" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/organize/type/toadd.mvc;/reps/sys/organize/type/add.mvc</action>
+						</node>
+						<node code="sys010202" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/organize/type/toedit.mvc;/reps/sys/organize/type/edit.mvc</action>
+						</node>
+						<node code="sys010203" name="组织机构关系" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/sys/organize/relation/index.mvc;/reps/sys/organize/relation/list.mvc</action>
+							<nodes>
+								<node code="sys01020301" name="添加关系" showOrder="1" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/toadd.mvc;/reps/sys/organize/relation/add.mvc</action>
+								</node>
+								<node code="sys01020302" name="修改" showOrder="2" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/toedit.mvc;/reps/sys/organize/relation/edit.mvc;/reps/sys/organize/relation/toeditorgandrel.mvc;/reps/sys/organize/relation/editorgandrel.mvc</action>
+								</node>
+								<node code="sys01020303" name="删除" showOrder="3" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/delete.mvc</action>
+								</node>
+								<node code="sys01020304" name="移动机构关系" showOrder="6" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/tomove.mvc;/reps/sys/organize/relation/move.mvc</action>
+								</node>
+								<node code="sys01020305" name="添加机构和机构关系" showOrder="5" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/toaddorgandrel.mvc;/reps/sys/organize/relation/addorgandrel.mvc</action>
+								</node>
+								<node code="sys01020306" name="查看" showOrder="4" newpage="false" type="Operate">
+									<action>/reps/sys/organize/relation/show.mvc</action>
+								</node>
+							</nodes>
+						</node>
+						<node code="sys010204" name="复制机构关系" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/sys/organize/type/tocopy.mvc;/reps/sys/organize/type/copy.mvc</action>
+						</node>
+						<node code="sys010205" name="删除" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/sys/organize/type/delete.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				-->
+				<node code="sys010500" name="用户管理" showOrder="2" newpage="false" type="Action" icon="system-m-user-icon">
+					<action>/reps/sys/user/list.mvc</action>
+					<nodes>
+						<node code="sys010501" name="添加用户" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/user/toadd.mvc;/reps/sys/user/add.mvc;/reps/sys/user/getpersonorganize.mvc</action>
+						</node>
+						<node code="sys010502" name="修改用户" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/user/toedit.mvc;/reps/sys/user/edit.mvc</action>
+						</node>
+						<node code="sys010504" name="删除用户" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/sys/user/delete.mvc</action>
+						</node>
+						<node code="sys010505" name="启用用户" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/sys/user/enabled.mvc</action>
+						</node>
+						<node code="sys010506" name="禁用用户" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/sys/user/disable.mvc</action>
+						</node>
+						<node code="sys010507" name="修改密码" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/sys/user/tochangepassword.mvc;/reps/sys/user/changepassword.mvc</action>
+						</node>
+						<node code="sys010508" name="详细" showOrder="8" newpage="false" type="Operate">
+							<action>/reps/sys/user/detail.mvc</action>
+						</node>
+						<node code="sys010509" name="批量创建用户" showOrder="9" newpage="false" type="Operate">
+							<action>/reps/sys/user/tobatchadd.mvc;/reps/sys/user/batchadd.mvc</action>
+						</node>
+						<node code="sys010510" name="导出Excel" showOrder="9" newpage="false" type="Operate">
+							<action>/reps/sys/user/export.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="sys010600" name="账户管理" showOrder="5" newpage="false" type="Action" icon="system-m-account-icon">
+					<action>/reps/sys/account/list.mvc</action>
+					<nodes>
+						<node code="sys010601" name="添加账户" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/account/toadd.mvc;/reps/sys/account/add.mvc;</action>
+						</node>
+						<node code="sys010602" name="修改账户" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/account/toedit.mvc;/reps/sys/account/edit.mvc</action>
+						</node>
+						<node code="sys010604" name="删除账户" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/sys/account/delete.mvc</action>
+						</node>
+						<node code="sys010605" name="启用账户" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/sys/account/enabled.mvc</action>
+						</node>
+						<node code="sys010606" name="禁用账户" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/sys/account/disable.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="sys010800" name="系统变量配置" showOrder="8" newpage="false" type="Action" icon="system-m-variable-icon">
+					<action>/reps/sys/variable/list.mvc;/reps/sys/variable/checkcode.mvc</action>
+					<nodes>
+						<node code="sys010801" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/variable/toadd.mvc;/reps/sys/variable/add.mvc</action>
+						</node>
+						<node code="sys010802" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/variable/toedit.mvc;/reps/sys/variable/edit.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="sys020000" name="权限管理" showOrder="2" newpage="false" type="Catalog" icon="system-c-menu-icon">
+		    <nodes>
+				<node code="sys020300" name="功能菜单管理" showOrder="3" newpage="false" type="Action" icon="system-m-menu-icon">
+					<action>/reps/sys/privilege/index.mvc;/reps/sys/privilege/list.mvc;/reps/sys/privilege/toedit.mvc;/reps/sys/privilege/choose.mvc;/reps/sys/privilege/edit.mvc;/reps/sys/privilege/delete.mvc</action>
+				</node>
+			</nodes>
+	    </node>
+	    <node code="sys040000" name="日志管理" type="Catalog" showOrder="8" icon="system-c-log-icon" newpage="false">
+	       <nodes>
+				<node code="sys040100" name="操作日志" showOrder="1" newpage="false" type="Action" icon="log-m-operate-icon">
+					<action>/platform/sys/log/list.mvc</action>
+					<nodes>
+						<node code="sys040101" name="日志导出" showOrder="1" newpage="false" type="Operate">
+							<action>/platform/sys/log/toxml.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<!-- 
+				<node code="sys040200" name="登录日志" showOrder="2" newpage="false" type="Action" icon="log-m-login-icon">
+					<action>/reps/sys/loginlog/list.mvc</action>
+					<nodes>
+						<node code="sys040201" name="日志导出" showOrder="1" newpage="false" type="Operate"></node>
+					</nodes>
+				</node>
+				<node code="sys040400" name="运行日志" showOrder="4" newpage="false" type="Action" icon="log-m-login-icon">
+					<action>/platform/syslogger/list.mvc;/platform/syslogger/delete.mvc</action>
+				</node>
+				 -->
+				<!-- 
+				<node code="sys040300" name="系统同步日志" showOrder="3" newpage="false" type="Action">
+					<action>/reps/sys/log/list.mvc</action>
+					<nodes>
+						<node code="sys040301" name="日志导出" showOrder="1" newpage="false" type="Operate"></node>
+					</nodes>
+				</node>
+				 -->
+				<node code="sys040500" name="登录日志" showOrder="2" newpage="false" type="Action" icon="log-m-login-icon">
+					<action>/platform/sys/loginlog/list.mvc;/platform/sys/loginlog/report.mvc</action>
+				</node>
+			</nodes>
+	    </node>
+	    <!-- 
+		<node code="sys050000" name="回收站" type="Catalog" showOrder="5">
+			<nodes>
+				<node code="sys050100" name="删除人员信息管理" showOrder="1" newpage="false" type="Action">
+					<action>/reps/sys/recycle/person/list.mvc</action>
+					<nodes>
+						<node code="sys050101" name="还原" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/recycle/person/revert.mvc</action>
+						</node>
+						<node code="sys050102" name="详细" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/recycle/person/toshow.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="sys050200" name="删除用户信息管理" showOrder="1" newpage="false" type="Action">
+					<action>/reps/sys/recycle/user/list.mvc</action>
+					<nodes>
+						<node code="sys050201" name="还原" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/recycle/user/revert.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		 -->
+	</menu>
+	<desk>
+		<!-- depend 与用户权限code绑定 code公共桌面项code -->
+		<!-- defaultPlace left reght mid -->
+		<item name="快捷桌面" code="ust010010" iframe="false" icon="shortcut" defaultPlace="left">
+			<value>/reps/publicdesk/shortcut.mvc</value>
+		</item>
+		<item name="人员信息查询" depend="sys010300" iframe="false" icon="personinfo" defaultPlace="mid">
+			<value>/reps/common/desk/personinfo.mvc;/reps/common/desk/personlist.mvc;/reps/sys/person/toshow.mvc</value>
+		</item>
+		<item name="待办事项" code="sys011100" iframe="false" icon="personinfo" defaultPlace="mid">
+			<value>/reps/reps/sys/things/desk/list.mvc</value>
+		</item>
+	</desk>
+	<!-- authc 登录之后才能访问 -->
+	<!-- nologin 不用登录可以访问 -->
+	<security>
+		<nologin>/index.jsp</nologin>
+		<!-- 本地使用时 -->
+		<nologin>/login.mvc</nologin>
+<!-- 		<nologin>/reps/register/**</nologin> -->
+		<nologin>/reps/recoverypass/**</nologin>
+		<nologin>/reps/common/upload.mvc</nologin>
+		<nologin>/reps/sys/chooseaccount/**</nologin>
+		<nologin>/reps/sys/chooseorganize/**</nologin>
+		<authc>/index.mvc</authc>
+		<authc>/theme.mvc</authc>
+		<authc>/desk.mvc</authc>
+		<authc>/usersetting/**</authc>
+		<!--<authc>/ajaxdesk.mvc</authc> -->
+		<authc>/reps/sys/district/tree.mvc</authc>
+		<authc>/reps/sys/chooseuser/**</authc>
+		<authc>/reps/sys/chooseperson/**</authc>
+	</security>
+</module>

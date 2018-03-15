@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="levelregister">
+	<description></description>
+	<menu>
+		<node code="level010300" parentCode="level010000" name="注册用户管理" showOrder="2" newpage="false" type="Action">
+			<action>
+				/reps/level/register/user/list.mvc;
+				/reps/level/register/user/delete.mvc;
+				/reps/level/register/user/toedit.mvc;
+				/reps/level/register/user/edit.mvc;
+				/reps/level/register/user/batchaudit.mvc
+			</action>
+		</node>
+	</menu>
+</module>

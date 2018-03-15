@@ -1,0 +1,11 @@
+/*
+*	
+*  联动展示页面样式
+*
+*
+*/
+
+
+select{margin:20px;padding:0 10px;height:30px;line-height:30px;width:300px;font-size:15px;font-weight:blod;}
+option{height:25px;line-height:25px;font-size:14px;padding:5px 13px 0;}
+.demo{height:100px;line-height:100px;display:table;text-align:center;}

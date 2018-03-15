@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysapp">
+	<description></description>
+	<menu>
+	    <node code="sysapp010000" parentCode="sys" name="应用整合管理" type="Catalog" showOrder="3" icon="system-c-application-icon" newpage="false">
+	       <nodes>
+				<node code="sysapp010100" name="应用注册管理" showOrder="1" newpage="false" type="Action" icon="system-m-app-register-icon">
+					<action>/reps/sys/app/list.mvc;/reps/sys/app/checkappexist.mvc</action>
+					<nodes>
+						<node code="sysapp010101" name="注册应用" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/sys/app/toadd.mvc;/reps/sys/app/add.mvc;/reps/sys/app/parent.mvc</action>
+						</node>
+						<node code="sysapp010102" name="编辑" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/sys/app/toedit.mvc;/reps/sys/app/edit.mvc;/reps/sys/app/parent.mvc</action>
+						</node>
+						<node code="sysapp010103" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/sys/app/delete.mvc</action>
+						</node>
+						<node code="sysapp010104" name="菜单维护" showOrder="3" newpage="false" type="Operate">
+							<action>
+								/reps/sys/menu/index.mvc;
+								/reps/sys/menu/list.mvc;
+								/reps/sys/menu/toadd.mvc;/reps/sys/menu/add.mvc;
+								/reps/sys/menu/toedit.mvc;/reps/sys/menu/edit.mvc;
+								/reps/sys/menu/detail.mvc;/reps/sys/menu/delete.mvc;
+								/reps/sys/menu/parent.mvc
+							</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+	    </node>
+	</menu>
+</module>

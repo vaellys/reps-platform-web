@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="schoolgdjy">
+	<description>高等教育管理</description>
+	<menu>
+		<node code="school040000" parentCode="school" name="高等教育管理" type="Catalog" showOrder="4" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="school040100" name="学校管理-高教" showOrder="1" newpage="false" type="Action" icon="school-m-icon">
+					<action>/reps/school/gdjy/school/list.mvc</action>
+					<nodes>
+						<node code="school040101" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/school/showdetail.mvc</action>
+						</node>
+						<node code="school040102" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/school/toadd.mvc;/reps/school/gdjy/school/add.mvc</action>
+						</node>
+						<node code="school040103" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/school/toedit.mvc;/reps/school/gdjy/school/edit.mvc</action>
+						</node>
+						<node code="school040104" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/school/delete.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school040200" name="班级管理-高教" showOrder="2" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/gdjy/classes/list.mvc</action>
+					<nodes>
+						<node code="school040201" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/showdetail.mvc;/reps/school/gdjy/classes/getteachers.mvc</action>
+						</node>
+						<node code="school040202" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/toadd.mvc;/reps/school/gdjy/classes/save.mvc</action>
+						</node>
+						<node code="school040203" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/toedit.mvc;</action>
+						</node>
+						<node code="school040204" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/delete.mvc</action>
+						</node>
+						<node code="school040205" name="结班" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/closeclasses.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school040300" name="学生管理-高教" showOrder="3" newpage="false" type="Action" icon="school-m-student-icon">
+					<action>/reps/school/gdjy/student/list.mvc</action>
+					<nodes>
+						<node code="school040301" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/student/showdetail.mvc</action>
+						</node>
+						<node code="school040302" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/student/toadd.mvc;/reps/school/gdjy/student/add.mvc;/reps/school/gdjy/student/getclasses.mvc</action>
+						</node>
+						<node code="school040303" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/student/toedit.mvc;/reps/school/gdjy/student/edit.mvc</action>
+						</node>
+						<node code="school040304" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/student/delete.mvc</action>
+						</node>
+						<node code="school040305" name="批量导入" showOrder="3" newpage="false" type="Operate">
+							<action>
+								/reps/dm/dataimport/template/student.mvc;
+								/reps/dm/dataimport/student.mvc
+							</action>
+						</node>
+						<node code="school040307" name="导出" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/student/export.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school040400" name="教师管理-高教" showOrder="4" newpage="false" type="Action" icon="school-m-teacher-icon">
+					<action>/reps/school/gdjy/teacher/list.mvc;/reps/school/gdjy/teacher/getclasses.mvc</action>
+					<nodes>
+						<node code="school040401" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/showdetail.mvc</action>
+						</node>
+						<node code="school040402" name="添加" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/toadd.mvc;/reps/school/gdjy/teacher/add.mvc</action>
+						</node>
+						<node code="school040403" name="修改" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/toedit.mvc;/reps/school/gdjy/teacher/edit.mvc</action>
+						</node>
+						<node code="school040404" name="删除" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/delete.mvc</action>
+						</node>
+						<node code="school040405" name="添加执教班级" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/toaddclasses.mvc;/reps/school/gdjy/teacher/addclasses.mvc</action>
+						</node>
+						<node code="school040406" name="删除执教班级" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/deleteclasses.mvc;</action>
+						</node>
+						<node code="school040407" name="批量导入" showOrder="3" newpage="false" type="Operate">
+							<action>
+								/reps/dm/dataimport/template/teacher.mvc;
+								/reps/dm/dataimport/teacher.mvc
+							</action>
+						</node>
+						<node code="school040408" name="导出" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/teacher/export.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				<!--
+				<node code="school020100" name="升学期或学年" showOrder="5" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/gdjy/upgrade/index.mvc</action>
+					<nodes>
+						<node code="school020101" name="毕业" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/toadd.mvc;/reps/school/gdjy/classes/save.mvc</action>
+						</node>
+						<node code="school020102" name="升学年" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/gdjy/classes/toedit.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				-->
+				<!-- 根据人的姓名，性别，证件号，查询出人，可以查看详细信息，查看详细信息，就要显示这个人对应的有哪些身份，更详细的包括一些权限信息
+				<node code="school050100" name="人员信息查询" showOrder="1" newpage="false" type="Action" icon="person-icon">
+					<action>/reps/person/query.mvc;/reps/school/gdjy/teacher/save.mvc</action>
+				</node>
+				-->
+			</nodes>
+		</node>
+	</menu>
+</module>

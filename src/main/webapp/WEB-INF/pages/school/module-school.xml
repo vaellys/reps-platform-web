@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="school" title="学校管理" showOrder="20" icon="school-icon">
+	<description>学校基本信息管理</description>
+	<menu>
+		<node code="book0000" name="教材管理" type="Catalog" showOrder="5" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="book0100" name="知识点管理" showOrder="1" newpage="false" type="Action" icon="knowledge-icon">
+					<action>
+						/reps/knowledge/list.mvc;
+						/reps/knowledge/tree/index.mvc;
+						/reps/knowledge/tree/list.mvc;
+						/reps/knowledge/tree/index/left.mvc;
+					</action>
+					<nodes>
+						<node code="book0101" name="添加" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/knowledge/toadd.mvc;/reps/knowledge/add.mvc</action>
+						</node>
+						<node code="book0102" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/knowledge/edit.mvc;/reps/knowledge/toedit.mvc</action>
+						</node>
+						<node code="book0103" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/knowledge/delete.mvc</action>
+						</node>
+						<node code="book0104" name="详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/knowledge/todetail.mvc</action>
+						</node>
+						<node code="book0105" name="添加知识点章节" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/knowledge/tree/toadd.mvc;/reps/knowledge/tree/add.mvc;</action>
+						</node>
+						<node code="school030106" name="修改知识点章节" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/knowledge/tree/toedit.mvc;/reps/knowledge/tree/edit.mvc;</action>
+						</node>
+						<node code="book0107" name="删除知识点章节" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/knowledge/tree/delete.mvc;</action>
+						</node>
+					</nodes>
+			 	</node>
+				<node code="book0200" name="教材管理" showOrder="1" newpage="false" type="Action" icon="book-icon">
+					<action>/reps/book/list.mvc;
+							/reps/book/catalog/index.mvc;
+							/reps/book/catalog/indexleft.mvc;
+							/reps/book/catalog/list.mvc;
+							/reps/book/relation/reload.mvc;
+					</action>
+					<nodes>
+						<node code="book0201" name="添加" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/book/toadd.mvc;/reps/book/add.mvc</action>
+						</node>
+						<node code="book0202" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/book/edit.mvc;/reps/book/toedit.mvc</action>
+						</node>
+						<node code="book0203" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/book/delete.mvc</action>
+						</node>
+						<node code="book0204" name="详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/book/todetect.mvc</action>
+						</node>
+						<node code="book0205" name="添加章节" showOrder="5" newpage="false" type="Operate">
+							<action>
+								/reps/book/catalog/toadd.mvc;/reps/book/catalog/add.mvc;
+							</action>
+						</node>
+						<node code="book0206" name="修改章节" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/book/catalog/toedit.mvc;/reps/book/catalog/edit.mvc;</action>
+						</node>
+						<node code="book0207" name="删除章节" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/book/catalog/delete.mvc;</action>
+						</node>
+					</nodes>
+			 	</node>
+			</nodes>
+		</node>
+	</menu>
+	<!-- authc 登录之后才能访问 -->
+	<!-- nologin 不用登录可以访问 -->
+	<security>
+		<authc>/reps/school/chooseschool/**</authc>
+		<authc>/reps/school/chooseteacher/**</authc>
+		<authc>/reps/school/choosestudent/**</authc>
+		<authc>/reps/school/getclasses.mvc</authc>
+	</security>
+	<consts>
+		<!-- 学校商标路径、形象图路径  -->
+		<citem name="logoandimagepath" value="" />
+	</consts>
+</module>

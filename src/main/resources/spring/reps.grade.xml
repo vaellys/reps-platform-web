@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+	<task:annotation-driven/>
+	<bean id="defaultGraduateGradeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<value>16</value>
+				<value>26</value>
+				<value>33</value>
+				<value>34</value>
+				<value>43</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="gradeUpMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="11" value="12" /><!-- 婴班升为托班 -->
+				<entry key="12" value="13" /><!-- 托班升为小班 -->
+				<entry key="13" value="14" /><!-- 小班升为 中班 -->
+				<entry key="14" value="15" /><!-- 中班升为 大班 -->
+				<entry key="15" value="16" /><!-- 大班升为 学前班 -->
+				<entry key="16" value="21" /><!-- 学前班升为 一年级 -->
+
+				<entry key="21" value="22" /><!-- 一年级升为二年级 -->
+				<entry key="22" value="23" /><!-- 二年级升为三年级 -->
+				<entry key="23" value="24" /><!-- 三年级升为四年级 -->
+				<entry key="24" value="25" /><!-- 四年级升为五年级 -->
+				<entry key="25" value="26" /><!-- 五年级升为六年级 -->
+				<entry key="26" value="31" /><!-- 六年级升为初一 -->
+
+				<entry key="31" value="32" /><!-- 初一升为初二 -->
+				<entry key="32" value="33" /><!-- 初二升为初三 -->
+				<entry key="33" value="34" /><!-- 初三升为高一 -->
+				<entry key="34" value="41" />
+
+				<entry key="41" value="42" /><!-- 高一升为高二 -->
+				<entry key="42" value="43" /><!-- 高二升为高三 -->
+				<entry key="43" value="43" /><!-- 高三升为高三 -->
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="gradeAliasMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="11"><!-- 婴班 -->
+					<list>
+						<value>婴班</value>
+					</list>
+				</entry>
+				<entry key="12"><!-- 托班 -->
+					<list>
+						<value>托班</value>
+					</list>
+				</entry>
+				<entry key="13"><!-- 小班 -->
+					<list>
+						<value>小班</value>
+					</list>
+				</entry>
+				<entry key="14"><!-- 中班 -->
+					<list>
+						<value>中班</value>
+					</list>
+				</entry>
+				<entry key="15"><!-- 大班 -->
+					<list>
+						<value>大班</value>
+					</list>
+				</entry>
+				<entry key="16"><!-- 学前班 -->
+					<list>
+						<value>学前班</value>
+					</list>
+				</entry>
+
+				<entry key="21"><!-- 一年级 -->
+					<list>
+						<value>一年级</value>
+						<value>一年</value>
+						<value>一</value>
+						<value>小学一年级</value>
+					</list>
+				</entry>
+				<entry key="22"><!-- 二年级 -->
+					<list>
+						<value>二年级</value>
+						<value>二年</value>
+						<value>二</value>
+						<value>小学二年级</value>
+					</list>
+				</entry>
+				<entry key="23"><!-- 三年级 -->
+					<list>
+						<value>三年级</value>
+						<value>三年</value>
+						<value>三</value>
+						<value>小学三年级</value>
+					</list>
+				</entry>
+				<entry key="24"><!-- 四年级 -->
+					<list>
+						<value>四年级</value>
+						<value>四年</value>
+						<value>四</value>
+						<value>小学四年级</value>
+					</list>
+				</entry>
+				<entry key="25"><!-- 五年级 -->
+					<list>
+						<value>五年级</value>
+						<value>五年</value>
+						<value>五</value>
+						<value>小学五年级</value>
+					</list>
+				</entry>
+				<entry key="26"><!-- 六年级 -->
+					<list>
+						<value>六年级</value>
+						<value>六年</value>
+						<value>六</value>
+						<value>小学六年级</value>
+					</list>
+				</entry>
+
+				<entry key="31"><!-- 初一 -->
+					<list>
+						<value>初一</value>
+						<value>初一</value><!-- 六年级升级时统一为初一 -->
+						<value>初一</value>
+						<value>初中一年级</value>
+						<value>七年级</value>
+						<value>七年</value>
+						<value>七</value>
+					</list>
+				</entry>
+				<entry key="32"><!-- 初二 -->
+					<list>
+						<value>初二</value>
+						<value>初二</value>
+						<value>初二</value>
+						<value>初中二年级</value>
+						<value>八年级</value>
+						<value>八年</value>
+						<value>八</value>
+					</list>
+				</entry>
+				<entry key="33"><!-- 初三 -->
+					<list>
+						<value>初三</value>
+						<value>初三</value>
+						<value>初三</value>
+						<value>初中三年级</value>
+						<value>九年级</value>
+						<value>九年</value>
+						<value>九</value>
+					</list>
+				</entry>
+
+				<entry key="41"><!-- 高一 -->
+					<list>
+						<value>高一</value>
+						<value>高一</value>
+						<value>高一</value>
+						<value>高中一年级</value>
+						<value>高一</value>
+						<value>高一</value>
+						<value>高一</value>
+					</list>
+				</entry>
+				<entry key="42"><!-- 高二 -->
+					<list>
+						<value>高二</value>
+						<value>高二</value>
+						<value>高二</value>
+						<value>高中二年级</value>
+					</list>
+				</entry>
+				<entry key="43"><!-- 高三 -->
+					<list>
+						<value>高三</value>
+						<value>高三</value>
+						<value>高三</value>
+						<value>高中三年级</value>
+					</list>
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>

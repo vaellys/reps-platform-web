@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="edumanager">
+	<description>教育管理者管理</description>
+	<menu>
+		<node code="school050000" parentCode="school" name="教育管理者管理" type="Catalog" showOrder="0" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="school050100" name="教育管理者管理" showOrder="1" newpage="false" type="Action" icon="school-m-teacher-icon">
+					<action>/reps/school/educationmanager/list.mvc</action>
+					<nodes>
+						<node code="school050101" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/educationmanager/showdetail.mvc</action>
+						</node>
+						<node code="school050102" name="添加" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/educationmanager/toadd.mvc;/reps/school/educationmanager/add.mvc;/reps/school/chooseorganize/single.mvc</action>
+						</node>
+						<node code="school050103" name="修改" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/educationmanager/toedit.mvc;/reps/school/educationmanager/edit.mvc</action>
+						</node>
+						<node code="school050104" name="删除" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/school/educationmanager/delete.mvc</action>
+						</node>						
+						<node code="school050105" name="修改密码" showOrder="8" newpage="false" type="Operate">
+							<action>/reps/school/educationmanager/tochangepassword.mvc;/reps/sys/user/changepassword.mvc</action>
+						</node>
+						<node code="school050106" name="批量导入" showOrder="5" newpage="false" type="Operate">
+							<action>
+								/reps/school/dataupload/template/teacher-manager.mvc;
+								/reps/school/dataupload/edumanager.mvc;
+								/reps/school/executeimport/teacherlist.mvc;
+								/reps/school/executeimport/saveteacher.mvc;
+								/reps/school/executeimport/toeditteacher.mvc;
+								/reps/school/executeimport/editteacher.mvc;
+								/reps/school/executeimport/deleteteacher.mvc;
+							</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+</module>

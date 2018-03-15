@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysmsg">
+	<description>消息中心</description>
+	
+	<security>
+		<authc>/reps/sys/message/list.mvc</authc>
+		<authc>/reps/sys/message/detail.mvc</authc>
+		<authc>/reps/sys/message/bathdelete.mvc</authc>
+	</security>
+</module>

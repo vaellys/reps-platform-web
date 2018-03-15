@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="dsc" title="数据交换管理" showOrder="81" icon="dsc-icon">
+	<description>Data service center</description>
+	<menu baseUrl="http://localhost:8085/reps-dsc-server-web">
+		<node code="mtd010000" name="数据标准管理" type="Catalog" showOrder="1" newpage="false" icon="standard-c-datastandard-icon">
+			<nodes>
+				<node code="mtd010100" name="对象组管理" showOrder="1" newpage="false" type="Action" icon="standard-m-objectgroup-icon">
+					<action>/reps/standard/objectgroup/list.mvc</action>
+					<nodes>
+						<node code="mtd010110" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/standard/objectgroup/toadd.mvc;/reps/standard/objectgroup/add.mvc</action>
+						</node>
+						<node code="mtd010120" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/standard/objectgroup/toedit.mvc;/reps/standard/objectgroup/edit.mvc
+							</action>
+						</node>
+						<node code="mtd010130" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/standard/objectgroup/delete.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="mtd010200" name="元数据定义" showOrder="2" newpage="false" type="Action" icon="standard-m-fielddefine-icon">
+					<action>/reps/standard/fielddefine/list.mvc</action>
+					<nodes>
+						<node code="mtd010210" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/standard/fielddefine/toadd.mvc;/reps/standard/fielddefine/add.mvc</action>
+						</node>
+						<node code="mtd010220" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/standard/fielddefine/toedit.mvc;/reps/standard/fielddefine/edit.mvc
+							</action>
+						</node>
+						<node code="mtd010230" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/standard/fielddefine/delete.mvc</action>
+						</node>
+						<node code="mtd010240" name="详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/standard/fielddefine/detail.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="mtd010300" name="数据对象管理" showOrder="3" newpage="false" type="Action" icon="standard-m-dataobject-icon">
+					<action>/reps/standard/dataobject/index.mvc;/reps/standard/dataobject/list.mvc;/reps/standard/dataobject/grouplist.mvc;/reps/standard/dataobject/show.mvc</action>
+					<nodes>
+						<node code="mtd010310" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/standard/dataobject/toadd.mvc;/reps/standard/dataobject/add.mvc;/reps/standard/dataobject/addandfield.mvc</action>
+						</node>
+						<node code="mtd010320" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>
+							/reps/standard/dataobject/toedit.mvc;
+							/reps/standard/dataobject/edit.mvc;
+							/reps/standard/dataobject/expdata.mvc;
+							/reps/standard/dataobject/checktable.mvc;
+							/reps/standard/dataobject/tofieldlist.mvc;
+							/reps/standard/dataobject/toobjectlist.mvc;
+							/reps/standard/dataobject/addfieldobject.mvc;
+							/reps/standard/dataobject/toobjectfieldlist.mvc;
+							/reps/standard/dataobject/addfieldobjectfield.mvc;
+							/reps/standard/dataobject/editfieldmoreset.mvc
+							</action>
+						</node>
+						<node code="mtd010330" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/standard/dataobject/delete.mvc</action>
+						</node>
+						<node code="mtd010340" name="添加字段" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/standard/dataobject/addfield.mvc</action>
+						</node>
+						<node code="mtd010350" name="删除字段" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/standard/dataobject/deletefield.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="dsc010000" name="数据交换管理" type="Catalog" showOrder="2" newpage="false" icon="dsc-c-agency-icon">
+			<nodes>
+				<node code="dsc010100" name="代理管理" showOrder="1" newpage="false" type="Action" icon="dsc-m-agent-icon">
+					<action>/reps/dsc/agent/list.mvc</action>
+					<nodes>
+						<node code="dsc010101" name="修改状态" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/dsc/agent/editstatus.mvc</action>
+						</node>
+						<node code="dsc010102" name="新增" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/dsc/agent/toadd.mvc;/reps/dsc/agent/save.mvc</action>
+						</node>
+						<node code="dsc010103" name="修改" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/dsc/agent/toedit.mvc;/reps/dsc/agent/save.mvc</action>
+						</node>
+						<node code="dsc010104" name="删除" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/dsc/agent/delete.mvc</action>
+						</node>
+						<node code="dsc010105" name="Ping" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/dsc/agent/ping.mvc</action>
+						</node>
+						<node code="dsc010106" name="权限控制" showOrder="6" newpage="false" type="Operate">
+							<action>
+								/reps/dsc/agentprivilege/list.mvc;/reps/dsc/agentprivilege/delete.mvc;
+								/reps/dsc/agentprivilege/objlist.mvc;/reps/dsc/agentprivilege/objinfo.mvc;
+								/reps/dsc/agentprivilege/edit.mvc
+							</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="dsc010300" name="交换日志查看" showOrder="3" newpage="false" type="Action" icon="dsc-m-messagelog-icon">
+					<action>/reps/dsc/log/list.mvc;/reps/dsc/log/view.mvc</action>
+				</node>
+				<!-- 
+				<node code="dsc010500" name="代理统计" showOrder="5" newpage="false" type="Action" icon="dsc-m-stat-agent-icon">
+					<action>/reps/dsc/messagelog/statagent.mvc</action>
+				</node>
+				<node code="dsc010600" name="代理活跃统计" showOrder="6" newpage="false" type="Action" icon="dsc-m-stat-activity-icon">
+					<action>/reps/dsc/messagelog/statmonth.mvc</action>
+				</node>
+				 -->
+			</nodes>
+		</node>
+	</menu>
+	<consts>
+		<citem name="ExportPath" value="/temp/mlogs" />
+	</consts>
+</module>

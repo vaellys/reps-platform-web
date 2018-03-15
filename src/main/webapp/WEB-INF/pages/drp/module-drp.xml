@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="drp" title="直报系统" showOrder="23" icon="drp-icon">
+	<description>数据直报,直报任务的管理，下发，直报数据格式定义，直接下载</description>
+	<menu>
+		<node code="drp010000" name="模板管理" type="Catalog" showOrder="1" icon="drp-c-template-icon" newpage="false">
+			<nodes>
+				<node code="drp010100" name="指标项定义" showOrder="1" newpage="false" type="Action" icon="drp-m-item-icon">
+					<action>/reps/drp/item/list.mvc</action>
+					<nodes>
+						<node code="drp010101" name="添加指标" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/item/toadd.mvc;/reps/drp/item/add.mvc;/reps/drp/item/getfield.mvc;/reps/drp/item/queryfield.mvc;
+							</action>
+						</node>
+						<node code="drp010102" name="修改指标项" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/drp/item/toedit.mvc;/reps/drp/item/edit.mvc;/reps/drp/item/getfield.mvc;/reps/drp/item/queryfield.mvc;
+							</action>
+						</node>
+						<node code="drp010103" name="删除指标项" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/item/delete.mvc</action>
+						</node>
+						<node code="drp010104" name="详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/item/detail.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="drp010200" name="创建报送模板" showOrder="2" newpage="false" type="Action" icon="drp-m-template-create-icon">
+					<action>/reps/drp/template/list.mvc</action>
+					<nodes>
+						<node code="drp010201" name="添加模版" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/template/toadd.mvc;/reps/drp/template/add.mvc;</action>
+						</node>
+						<node code="drp010202" name="修改模版" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/drp/template/toedit.mvc;/reps/drp/template/edit.mvc;</action>
+						</node>
+						<node code="drp010203" name="删除模版" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/template/delete.mvc</action>
+						</node>
+						<node code="drp010204" name="配置指标项" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/template/todeployitem.mvc;/reps/drp/template/deployitem.mvc
+							</action>
+						</node>
+						<node code="drp010205" name="定义汇总公式" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/drp/template/toformula.mvc;/reps/drp/template/formula.mvc;/reps/drp/template/formulasave.mvc</action>
+						</node>
+						<node code="drp010206" name="发布" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/drp/template/release.mvc;</action>
+						</node>
+						<node code="drp010207" name="详细" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/drp/template/detail.mvc;</action>
+						</node>
+						
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="drp020000" name="任务管理" type="Catalog" showOrder="2" icon="drp-c-task-icon" newpage="false">
+			<nodes>
+				<node code="drp020100" name="任务下发" showOrder="1" newpage="false" type="Action" icon="drp-m-task-send-icon">
+					<action>/reps/drp/report/list.mvc</action>
+					<nodes>
+						<node code="drp020101" name="添加任务" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/report/toadd.mvc;/reps/drp/report/add.mvc;/reps/drp/report/gettemplateitem.mvc;/reps/drp/report/totemplatelist.mvc;
+							</action>
+						</node>
+						<node code="drp020102" name="修改任务" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/drp/report/toedit.mvc;/reps/drp/report/edit.mvc;/reps/drp/report/gettemplateitem.mvc;/reps/drp/report/totemplatelist.mvc;
+							</action>
+						</node>
+						<node code="drp020103" name="删除任务" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/report/delete.mvc;</action>
+						</node>
+						<node code="drp020104" name="详细 " showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/report/view.mvc;/reps/drp/report/download.mvc;</action>
+						</node>
+						<node code="drp020105" name="下发任务" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/drp/report/orgs.mvc;/reps/drp/report/sendreport.mvc</action>
+						</node>
+						<node code="drp020106" name="保存并下发" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/drp/report/orgs.mvc;/reps/drp/report/addsaveandsend.mvc
+							</action>
+						</node>
+						<node code="drp020107" name="撤销下发" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/drp/report/revocation.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="drp020200" name="接收任务" showOrder="3" newpage="false" type="Action" icon="drp-m-task-receive-icon">
+					<action>/reps/drp/schoolreport/list.mvc</action>
+					<nodes>
+						<node code="drp020201" name="详细" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/view.mvc</action>
+						</node>
+						<node code="drp020202" name="转发" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/toorganizelist.mvc;/reps/drp/schoolreport/transpond.mvc;/reps/drp/schoolreport/revocation.mvc</action>
+						</node>
+						<node code="drp020203" name="下载模板" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/download.mvc</action>
+						</node>
+						<node code="drp020204" name="上报" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/reported.mvc;/reps/drp/schoolreport/toadd.mvc;/reps/drp/schoolreport/add.mvc;/reps/drp/schoolreport/deleterepetition.mvc;
+								/reps/drp/schoolreport/delete.mvc;/reps/drp/schoolreport/toedit.mvc;/reps/drp/schoolreport/delete.mvc;/reps/drp/schoolreport/deleteexceldata.mvc;
+								/reps/drp/schoolreport/edit.mvc;/reps/drp/schoolreport/upload.mvc;/reps/drp/schoolreport/repetition.mvc;/reps/drp/schoolreport/isrepetition.mvc;/reps/drp/schoolreport/queryrepeat.mvc
+							</action>
+						</node>
+						<node code="drp020205" name="完成" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/finishreport.mvc</action>
+						</node>
+						<node code="drp020206" name="数据查看" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/drp/schoolreport/datalist.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="drp030000" name="数据上报管理" type="Catalog" showOrder="3" icon="drp-c-report-icon" newpage="false">
+			<nodes>
+				<node code="drp030100" name="转发数据汇总" showOrder="1" newpage="false" type="Action" icon="drp-m-transdata-collect-icon">
+					<action>/reps/drp/districtcollect/list.mvc</action>
+					<nodes>
+						<node code="drp030101" name="详细" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/districtcollect/view.mvc</action>
+						</node>
+<!-- 						<node code="drp030102" name="汇总上报" showOrder="2" newpage="false" type="Operate">
+							<action></action>
+						</node> -->
+						<node code="drp030103" name="完成上报" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/districtcollect/reported.mvc;</action>
+						</node>
+						<node code="drp030104" name="上报情况" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/districtcollect/reportcondition.mvc;/reps/drp/districtcollect/tocollect.mvc;/reps/drp/districtcollect/collect.mvc;/reps/drp/districtcollect/reject.mvc;/reps/drp/districtcollect/annul.mvc;</action>
+						</node>
+						<node code="drp030105" name="数据查看" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/drp/districtcollect/datalist.mvc;</action>
+						</node>
+						<node code="drp030108" name="学校上报数据查重" showOrder="8" newpage="false" type="Operate">
+							<action>/reps/drp/districtcollect/reportlist.mvc;/reps/drp/districtcollect/delete.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="drp030200" name="下发数据汇总" showOrder="2" newpage="false" type="Action" icon="drp-m-senddata-collect-icon">
+					<action>/reps/drp/citycollect/list.mvc</action>
+					<nodes>
+						<node code="drp030201" name="详细" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/drp/citycollect/view.mvc</action>
+						</node>
+						<node code="drp030203" name="导出数据" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/drp/citycollect/todatatoexcel.mvc;/reps/drp/citycollect/datatoexcel.mvc;/reps/drp/citycollect/download.mvc</action>
+						</node>
+						<node code="drp030204" name="上报情况" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/drp/citycollect/delete.mvc;/reps/drp/citycollect/reject.mvc;/reps/drp/citycollect/annul.mvc;/reps/drp/citycollect/reportcondition.mvc;/reps/drp/citycollect/datalist.mvc;/reps/drp/citycollect/tocollect.mvc;/reps/drp/citycollect/collect.mvc;/reps/drp/citycollect/urge.mvc;</action>
+						</node>
+						<node code="drp030207" name="学校上报数据查重" showOrder="8" newpage="false" type="Operate">
+							<action>/reps/drp/citycollect/reportlist.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="drp040000" name="报送目录查询" type="Catalog" showOrder="4" icon="drp-c-report-search-icon" newpage="false">
+			<nodes>
+				<node code="drp040100" name="报送数据查询" showOrder="1" newpage="false" type="Action" icon="drp-m-report-search-icon">
+					<action>/reps/drp/districtreplist/list.mvc;</action>
+					<nodes>
+						<node code="drp040101" name="上报数据" type="Operate">
+							<action>/reps/drp/districtreplist/datalist.mvc;</action>
+						</node>
+					</nodes>						
+				</node>
+			</nodes>
+		</node> 
+		<node code="drp050000" name="数据统计分析" type="Catalog" showOrder="4" icon="drp-c-report-analyze-icon" newpage="false">
+			<nodes>
+				<node code="drp050100" name="上报数据统计" showOrder="1" newpage="false" type="Action" icon="drp-m-report-stat-icon">
+					<action>/reps/drp/datastatistics/list.mvc;</action>
+ 					<nodes>
+						<node code="drp050101" name="数据统计" type="Operate">
+							<action>/reps/drp/datastatistics/datalist.mvc;/reps/drp/datastatistics/statistics.mvc;</action>
+						</node>
+					</nodes>						
+				</node>
+<!-- 
+				<node code="drp050200" name="chart测试" showOrder="2" newpage="false" type="Action">
+					<action>/reps/drp/datastatistics/test.mvc;</action>
+					<nodes>
+						<node code="drp050101" name="上报数据">
+							<action>/reps/drp/datastatistics/datalist.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+-->
+			</nodes>
+		</node>
+		<node code="drp060000" name="责任人管理" type="Catalog" showOrder="5" icon="drp-c-report-analyze-icon" newpage="false">
+			<nodes>
+				<node code="drp060100" name="责任人设置" showOrder="1" newpage="false" type="Action" icon="drp-m-report-stat-icon">
+					<action>/reps/drp/executor/list.mvc;</action>
+ 					<nodes>
+						<node code="drp060101" name="添加" type="Operate">
+							<action>/reps/drp/executor/save.mvc;</action>
+						</node>
+					</nodes>						
+				</node>
+			</nodes>
+		</node>
+	</menu>
+ 	<consts>
+		<citem name="uploadpath" value="" />
+		<citem name="downloadpath" value="" />
+	</consts> 
+</module>

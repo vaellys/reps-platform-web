@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Reps-1.0.0</display-name>
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/commons/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/commons/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/commons/403.jsp</location>
+	</error-page>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring/reps.*.xml</param-value>
+	</context-param>
+
+	<filter>
+		<description>rquest放入ThreadLocal中</description>
+		<filter-name>httpInfoFilter</filter-name>
+		<filter-class>com.reps.core.web.filter.HttpSessionManagerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>httpInfoFilter</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>httpInfoFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>httpInfoFilter</filter-name>
+		<url-pattern>/logout</url-pattern>
+	</filter-mapping>
+	
+	<!-- 单点登录 -->
+	<filter>
+		<filter-name>clientSSOFilter</filter-name>
+		<filter-class>com.reps.platform.sso.filter.ClientSSOFilter</filter-class>
+		<init-param>
+			<param-name>logoutUri</param-name>
+			<param-value>/logout</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>clientSSOFilter</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>clientSSOFilter</filter-name>
+		<url-pattern>/chooseuser.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>clientSSOFilter</filter-name>
+		<url-pattern>/logout</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>chooseUserFilter</filter-name>
+		<filter-class>com.reps.platform.filter.ChooseUserFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>chooseUserFilter</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>chooseUserFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>permissionsAuthorizationFilter</filter-name>
+		<filter-class>com.reps.core.security.PermissionsAuthorizationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>permissionsAuthorizationFilter</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>commonFilter</filter-name>
+		<filter-class>com.reps.platform.filter.CommonFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>commonFilter</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>commonFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>reps</filter-name>
+		<filter-class>com.reps.core.web.filter.RepsUIFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>reps</filter-name>
+		<url-pattern>*.mvc</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>reps</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>api</servlet-name>
+		<servlet-class>com.reps.core.api.ApiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>api</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>defaultServlet</description>
+		<servlet-name>springMvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<description>spring mvc</description>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring/reps-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMvc</servlet-name>
+		<url-pattern>*.mvc</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>com.reps.core.RepsContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.reps.sso.client.filter.SingleSignOutHttpSessionListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<session-config>
+		<!-- 等待解决ajax交互session失效的问题 -->
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+</web-app>

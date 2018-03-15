@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysdict">
+	<description>字典管理菜单</description>
+	<menu>
+		<node code="sys010400" parentCode="sys010000" name="字典码表管理" showOrder="10" newpage="false" type="Action" icon="system-m-dictionary-icon">
+			<action>
+				/reps/sys/dictionary/index.mvc;/reps/sys/dictionary/list.mvc;/reps/sys/dictionary/exist.mvc;
+				/reps/sys/dictionary/toedit.mvc;/reps/sys/dictionary/edit.mvc;/reps/sys/dictionary/getdetail.mvc;
+				/reps/sys/dictionary/itemindex.mvc;/reps/sys/dictionary/itemlist.mvc;/reps/sys/dictionary/getitemdetail.mvc;
+				/reps/sys/dictionary/toadditem.mvc;/reps/sys/dictionary/additem.mvc;/reps/sys/dictionary/toedititem.mvc;
+				/reps/sys/dictionary/edititem.mvc;/reps/sys/dictionary/deleteitem.mvc;/reps/sys/dictionary/reload.mvc;
+				/reps/sys/dictionary/export.mvc;
+			</action>
+		</node>
+	</menu>
+	<!-- authc 登录之后才能访问 -->
+	<!-- nologin 不用登录可以访问 -->
+	<security>
+		<nologin>/reps/sys/dictionary/getdictitems.mvc</nologin>
+		<nologin>/reps/sys/district/tree.mvc</nologin>
+	</security>
+</module>

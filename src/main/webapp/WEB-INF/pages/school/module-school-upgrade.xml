@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="schoolupgrade">
+	<description>学生升学管理</description>
+	<menu>
+		<node code="school080000" parentCode="school" name="升学管理" type="Catalog" showOrder="6" icon="basicdata" newpage="false">
+			<action>/reps/school/upgrade/toedit.mvc;/reps/school/upgrade/edit.mvc</action>
+			<nodes>
+				<node code="school080100" name="毕业" showOrder="1" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/upgrade/index.mvc?errorType=education</action>
+					<nodes>
+						<node code="school080101" name="执行毕业" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/upgrade/toeducation.mvc;/reps/school/upgrade/education.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school080200" name="升学期" showOrder="2" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/upgrade/index.mvc?errorType=term</action>
+					<nodes>
+						<node code="school080201" name="执行升学期" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/upgrade/toterm.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school080300" name="升年级" showOrder="3" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/upgrade/index.mvc?errorType=year</action>
+					<nodes>
+						<node code="school080301" name="执行升年级" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/upgrade/toyear.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+</module>

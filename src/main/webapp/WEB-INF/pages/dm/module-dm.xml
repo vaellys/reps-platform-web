@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="dm" title="数据维护" showOrder="80" icon="dm-icon">
+	<description>数据维护</description>
+	<menu>
+		<node code="dm020000" name="数据纠正" type="Catalog" showOrder="2" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="dm020100" name="机构数据迁移" showOrder="1" newpage="false" type="Action">
+					<action>
+						/reps/dm/datacorrect/organize/list.mvc;
+						/reps/dm/datacorrect/organize/switchmergeto.mvc;
+						/reps/dm/datacorrect/organize/merge.mvc
+					</action>
+				</node>
+				<node code="dm020200" name="用户变更" showOrder="2" newpage="false" type="Action">
+					<action>
+						/reps/dm/datacorrect/user/list.mvc;
+						/reps/dm/datacorrect/user/switchchangeto.mvc;
+						/reps/dm/datacorrect/user/adjust.mvc
+					</action>
+				</node>
+				<node code="dm020300" name="重置密码" showOrder="3" newpage="false" type="Action">
+					<action>
+						/reps/dm/resetpassword/list.mvc;
+						/reps/dm/resetpassword/chooseidentity.mvc;
+						/reps/dm/resetpassword/doreset.mvc
+					</action>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+	<consts>
+		<!-- 数据文件上传存储路径 -->
+		<citem name="dm-upload" value="" />
+	</consts>
+</module>

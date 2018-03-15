@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="schoolkids">
+	<description>学前信息管理</description>
+	<menu>
+		<node code="school010000" parentCode="school" name="学前管理" type="Catalog" showOrder="1" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="school010100" name="学校管理-学前" showOrder="1" newpage="false" type="Action" icon="school-m-icon">
+					<action>/reps/school/kids/school/list.mvc</action>
+					<nodes>
+						<node code="school010101" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/school/showdetail.mvc</action>
+						</node>
+						<node code="school010102" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/school/toadd.mvc;/reps/school/kids/school/add.mvc</action>
+						</node>
+						<node code="school010103" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/kids/school/toedit.mvc;/reps/school/kids/school/edit.mvc</action>
+						</node>
+						<node code="school010104" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/kids/school/delete.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school010200" name="班级管理-学前" showOrder="2" newpage="false" type="Action" icon="school-m-classes-icon">
+					<action>/reps/school/kids/classes/list.mvc</action>
+					<nodes>
+						<node code="school010201" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/classes/showdetail.mvc;/reps/school/kids/classes/getteachers.mvc</action>
+						</node>
+						<node code="school010202" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/classes/toadd.mvc;/reps/school/kids/classes/save.mvc</action>
+						</node>
+						<node code="school010203" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/kids/classes/toedit.mvc;/reps/school/kids/classes/save.mvc</action>
+						</node>
+						<node code="school010204" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/kids/classes/delete.mvc</action>
+						</node>
+						<node code="school010205" name="结班" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/kids/classes/closeclasses.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school010300" name="学生管理-学前" showOrder="3" newpage="false" type="Action" icon="school-m-student-icon">
+					<action>/reps/school/kids/student/list.mvc</action>
+					<nodes>
+						<node code="school010301" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/showdetail.mvc</action>
+						</node>
+						<node code="school010302" name="添加" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/toadd.mvc;/reps/school/kids/student/add.mvc;/reps/school/kids/student/getclasses.mvc</action>
+						</node>
+						<node code="school010303" name="修改" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/toedit.mvc;/reps/school/kids/student/edit.mvc</action>
+						</node>
+						<node code="school010304" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/delete.mvc</action>
+						</node>
+						<node code="school010306" name="批量导入" showOrder="4" newpage="false" type="Operate">
+							<action>
+								/reps/school/dataupload/template/kids.mvc;
+								/reps/school/dataupload/kids.mvc;
+								/reps/school/executeimport/kidslist.mvc;
+								/reps/school/executeimport/savekids.mvc;
+								/reps/school/executeimport/toeditkids.mvc;
+								/reps/school/executeimport/editkids.mvc;
+								/reps/school/executeimport/deletekids.mvc;
+							</action>
+						</node>
+						<node code="school010307" name="导出" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/export.mvc</action>
+						</node>
+						<node code="school010308" name="修改密码" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/school/kids/student/tochangepassword.mvc;/reps/sys/user/changepassword.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="school010400" name="教师管理-学前" showOrder="4" newpage="false" type="Action" icon="school-m-teacher-icon">
+					<action>/reps/school/kids/teacher/list.mvc;/reps/school/kids/teacher/getclasses.mvc</action>
+					<nodes>
+						<node code="school010401" name="查看详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/showdetail.mvc</action>
+						</node>
+						<node code="school010402" name="添加" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/toadd.mvc;/reps/school/kids/teacher/add.mvc</action>
+						</node>
+						<node code="school010403" name="修改" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/toedit.mvc;/reps/school/kids/teacher/edit.mvc</action>
+						</node>
+						<node code="school010404" name="删除" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/delete.mvc</action>
+						</node>
+						<node code="school010405" name="添加执教班级" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/toaddclasses.mvc;/reps/school/kids/teacher/addclasses.mvc</action>
+						</node>
+						<node code="school010406" name="删除执教班级" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/deleteclasses.mvc;</action>
+						</node>
+						<node code="school010407" name="批量导入" showOrder="3" newpage="false" type="Operate">
+							<action>
+								/reps/school/dataupload/template/teacher.mvc;
+								/reps/school/dataupload/teacher.mvc;
+								/reps/school/executeimport/teacher.mvc;
+								/reps/school/executeimport/teacherlist.mvc;
+								/reps/school/executeimport/saveteacher.mvc;
+								/reps/school/executeimport/toeditteacher.mvc;
+								/reps/school/executeimport/editteacher.mvc;
+								/reps/school/executeimport/deleteteacher.mvc;
+							</action>
+						</node>
+						<node code="school010408" name="导出" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/export.mvc;</action>
+						</node>
+						<node code="school010409" name="修改密码" showOrder="8" newpage="false" type="Operate">
+							<action>/reps/school/kids/teacher/tochangepassword.mvc;/reps/sys/user/changepassword.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				-->
+				<!-- 根据人的姓名，性别，证件号，查询出人，可以查看详细信息，查看详细信息，就要显示这个人对应的有哪些身份，更详细的包括一些权限信息
+				<node code="school050100" name="人员信息查询" showOrder="1" newpage="false" type="Action" icon="person-icon">
+					<action>/reps/person/query.mvc;/reps/school/kids/teacher/save.mvc</action>
+				</node>
+				-->
+			</nodes>
+		</node>
+	</menu>
+</module>

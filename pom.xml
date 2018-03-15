@@ -1,0 +1,327 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.reps</groupId>
+		<artifactId>reps-platform-parent</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>reps-platform-web</artifactId>
+	<packaging>war</packaging>
+	<name>reps-platform-web</name>
+
+	<properties>
+		<project.build.sourceVersion>1.7</project.build.sourceVersion>
+		<project.build.targetVersion>1.7</project.build.targetVersion>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-ui</artifactId>
+		</dependency>
+
+		<!-- 消息中心 -->
+		<!-- <dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-message-action</artifactId>
+		</dependency> --> 
+		
+		<!-- system -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-action</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-log</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-dict</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-app</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-appaccess</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-role</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-agent</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-position</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-system-customrole</artifactId>
+		</dependency>
+
+		<!-- register -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-register</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-register-action</artifactId>
+		</dependency>
+
+		<!-- book -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-book</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-book-action</artifactId>
+		</dependency>
+
+		<!-- level -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-level</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-level-action</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-level-register</artifactId>
+		</dependency>
+
+		<!-- school -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-school</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-school-action</artifactId>
+		</dependency>
+
+		<!-- dm -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-dm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-dm-action</artifactId>
+		</dependency>
+
+		<!-- appmark -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-appmark</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-appmark-action</artifactId>
+		</dependency>
+
+		<!-- remark -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-remark</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-remark-action</artifactId>
+		</dependency>
+		
+		<!-- rrt -->
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-rrt-action</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.reps.dsc</groupId>
+			<artifactId>reps-dsc-sdk</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-sso-client-sdk</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-core-springcache</artifactId>
+		</dependency>
+
+		<!-- db Start -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver.jdbc</groupId>
+			<artifactId>sqljdbc4</artifactId>
+		</dependency>
+		<!-- db End -->
+
+		<!-- mongodb -->
+		<dependency>
+			<groupId>org.log4mongo</groupId>
+			<artifactId>log4mongo-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-context</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-tx</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-beans</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-expression</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- web依赖包 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- WEB end -->
+
+		<dependency>
+			<groupId>com.baidu</groupId>
+			<artifactId>ueditor</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20140107</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.reps</groupId>
+			<artifactId>reps-khxt-action</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${project.build.sourceVersion}</source>
+					<target>${project.build.targetVersion}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<version>3.0</version>
+					<webResources>
+						<resource>
+							<directory>${env.config}</directory>
+							<targetPath>/</targetPath>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<env.config>profiles/dev</env.config>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
+</project>

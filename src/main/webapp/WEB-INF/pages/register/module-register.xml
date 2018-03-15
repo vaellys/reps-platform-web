@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="register">
+	<description>学校注册管理</description>
+	<menu>
+		<node code="registeruser010000" parentCode="sys" name="注册用户管理" type="Catalog" showOrder="1" icon="system-c-application-icon" newpage="false">
+	       <nodes>
+				<node code="registeruser010100" name="注册用户管理" showOrder="1" newpage="false" type="Action" icon="system-m-app-register-icon">
+					<action>/reps/register/user/list.mvc</action>
+					<nodes>
+						<node code="registeruser010101" name="修改" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/register/user/edit.mvc;/reps/register/user/toedit.mvc;/reps/register/user/schoolclasses.mvc</action>
+						</node>
+						<node code="registeruser010102" name="批量审核" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/register/user/batchaudit.mvc</action>
+						</node>
+						<node code="registeruser010103" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/register/user/delete.mvc</action>
+						</node>
+						<node code="registeruser010104" name="详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/register/user/detail.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+	    </node>
+	    <!-- 
+		<node code="register0100" parentCode="level010000" name="学校注册管理" showOrder="10" newpage="false" type="Action" icon="school-m-icon">
+			<action>/reps/register/school/list.mvc</action>
+			<nodes>
+				<node code="register0102" name="信息审核" showOrder="1" newpage="false" type="Operate">
+					<action>/reps/register/school/check.mvc</action>
+				</node>
+				<node code="register0104" name="删除" showOrder="3" newpage="false" type="Operate">
+					<action>/reps/register/school/delete.mvc</action>
+				</node>
+			</nodes>
+		</node>
+		 -->
+	</menu>
+</module>

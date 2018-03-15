@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="customrole">
+	<description>自定义角色</description>
+	<menu>
+		<node code="customrole0100" parentCode="sys020000" name="自定义角色" showOrder="1" newpage="false" type="Action" icon="system-m-customrole-icon">
+			<action>/reps/sys/customrole/list.mvc</action>
+			<nodes>
+				<node code="customrole010101" name="添加角色" showOrder="1" newpage="false" type="Operate">
+					<action>/reps/sys/customrole/toadd.mvc;/reps/sys/customrole/add.mvc</action>
+				</node>
+				<node code="customrole010102" name="修改角色" showOrder="2" newpage="false" type="Operate">
+					<action>/reps/sys/customrole/toedit.mvc;/reps/sys/customrole/edit.mvc</action>
+				</node>
+				<node code="customrole010103" name="用户分配" showOrder="3" newpage="false" type="Operate">
+					<action>
+						/reps/sys/customrole/user/list.mvc;
+						/reps/sys/customrole/user/save.mvc;
+						/reps/sys/customrole/user/delete.mvc;
+						/reps/sys/customrole/user/multiple.mvc
+					</action>
+				</node>
+				<node code="customrole010104" name="删除角色" showOrder="5" newpage="false" type="Operate">
+					<action>/reps/sys/customrole/delete.mvc</action>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+</module>

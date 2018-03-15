@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysposition">
+	<description>身份权限管理</description>
+	<menu>
+		<node code="sysposition0100" parentCode="sys020000" name="身份权限管理" showOrder="2" newpage="false" type="Action" icon="privilege-m-position-icon">
+			<action>/reps/sys/position/list.mvc</action>
+			<nodes>
+				<node code="sysposition0101" name="添加身份权限" showOrder="1" newpage="false" type="Operate">
+					<action>/reps/sys/position/toadd.mvc;/reps/sys/position/add.mvc</action>
+				</node>
+				<node code="sysposition0102" name="修改身份权限" showOrder="2" newpage="false" type="Operate">
+					<action>/reps/sys/position/toedit.mvc;/reps/sys/position/edit.mvc</action>
+				</node>
+				<node code="sysposition0103" name="删除身份权限" showOrder="3" newpage="false" type="Operate">
+					<action>/reps/sys/position/delete.mvc</action>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+</module>

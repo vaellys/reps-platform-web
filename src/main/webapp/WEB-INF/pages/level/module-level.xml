@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="level" title="分级管理" showOrder="11" icon="level-icon">
+	<description></description>
+	<menu>
+		<node code="level010000" name="系统管理" type="Catalog" showOrder="1" icon="level-c-icon" newpage="false">
+			<nodes>
+				<!-- 
+				<node code="level010100" name="机构管理" showOrder="1" newpage="false" type="Action" icon="system-m-organize-icon">
+					<action>/reps/level/organize/index.mvc;/reps/level/organize/list.mvc;/reps/level/organize/detail.mvc</action>
+					<nodes>
+						<node code="level010101" name="添加机构" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/level/organize/toadd.mvc;/reps/level/organize/add.mvc</action>
+						</node>
+						<node code="level010102" name="修改机构" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/level/organize/toedit.mvc;/reps/level/organize/edit.mvc</action>
+						</node>
+						<node code="level010103" name="删除机构" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/level/organize/delete.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				 -->
+				<node code="level010200" name="用户管理" showOrder="2" newpage="false" type="Action" icon="system-m-user-icon">
+					<action>/reps/level/user/list.mvc;/reps/level/user/chooseorganize.mvc</action>
+					<nodes>
+						<node code="level010201" name="添加用户" showOrder="1" newpage="false" type="Operate">
+							<action>
+								/reps/level/user/toadd.mvc;
+								/reps/level/user/add.mvc;
+								/reps/level/user/checkloginname.mvc
+							</action>
+						</node>
+						<node code="level010202" name="修改用户" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/level/user/toedit.mvc;/reps/level/user/edit.mvc</action>
+						</node>
+						<node code="level010204" name="删除用户" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/level/user/delete.mvc</action>
+						</node>
+						<!-- 
+						屏蔽分级管理的启用、禁用用户功能 杨明 2017-6-7
+						<node code="level010205" name="启用用户" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/level/user/enabled.mvc</action>
+						</node>
+						<node code="level010206" name="禁用用户" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/level/user/disable.mvc</action>
+						</node>
+						 -->
+						<node code="level010207" name="修改密码" showOrder="6" newpage="false" type="Operate">
+							<action>/reps/level/user/tochangepassword.mvc;/reps/level/user/changepassword.mvc</action>
+						</node>
+						<node code="level010208" name="详细" showOrder="7" newpage="false" type="Operate">
+							<action>/reps/level/user/detail.mvc</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+	    <node code="level020000" name="权限管理" type="Catalog" showOrder="2" newpage="false" icon="authority">
+		    <nodes>
+				<node code="level020100" name="角色权限管理" showOrder="1" newpage="false" type="Action" icon="privilege-m-role-icon">
+					<action>/reps/level/role/list.mvc</action>
+					<nodes>
+						<node code="level020101" name="添加角色" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/level/role/toadd.mvc;/reps/level/role/add.mvc</action>
+						</node>
+						<node code="level020102" name="修改角色" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/level/role/toedit.mvc;/reps/level/role/edit.mvc</action>
+						</node>
+						<node code="level020103" name="删除角色" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/level/role/delete.mvc</action>
+						</node>
+						<node code="level020104" name="用户分配" showOrder="4" newpage="false" type="Operate">
+							<action>
+								/reps/level/userrole/list.mvc;
+								/reps/level/userrole/save.mvc;
+								/reps/level/userrole/delete.mvc;
+								/reps/level/userrole/chooseuser.mvc;
+								/reps/level/userrole/multiple.mvc
+							</action>
+						</node>
+						<node code="level020105" name="设置数据权限" showOrder="5" newpage="false" type="Operate">
+							<action>
+								/reps/level/dr/tosetprivilege.mvc;
+								/reps/level/dr/setprivilege.mvc;
+								/reps/level/dr/chooseorganize.mvc;
+								/reps/level/dr/chooseuser.mvc
+							</action>
+						</node>
+						<node code="level020106" name="账号分配" showOrder="5" newpage="false" type="Operate">
+							<action>
+								/reps/level/accountrole/list.mvc;
+								/reps/level/accountrole/save.mvc;
+								/reps/level/accountrole/delete.mvc;
+								/reps/level/accountrole/multiple.mvc
+							</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="level020200" name="身份权限管理" showOrder="2" newpage="false" type="Action" icon="privilege-m-position-icon">
+					<action>/reps/level/position/list.mvc</action>
+					<nodes>
+						<node code="level020201" name="添加身份权限" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/level/position/toadd.mvc;/reps/level/position/add.mvc</action>
+						</node>
+						<node code="level020202" name="修改身份权限" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/level/position/toedit.mvc;/reps/level/position/edit.mvc</action>
+						</node>
+						<node code="level020203" name="删除身份权限" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/level/position/delete.mvc</action>
+						</node>
+						<node code="level020204" name="设置机构范围" showOrder="4" newpage="false" type="Operate">
+							<action>
+								/reps/level/positionorganize/list.mvc;
+								/reps/level/positionorganize/save.mvc;
+								/reps/level/positionorganize/delete.mvc;
+								/reps/level/positionorganize/chooseorganize.mvc;
+								/reps/level/positionorganize/setlower.mvc
+							</action>
+						</node>
+						<node code="level020205" name="设置数据权限" showOrder="5" newpage="false" type="Operate">
+							<action>
+								/reps/level/dr/tosetprivilege.mvc;
+								/reps/level/dr/setprivilege.mvc;
+								/reps/level/dr/chooseorganize.mvc;
+								/reps/level/dr/chooseuser.mvc
+							</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="level020300" name="分级功能管理" showOrder="3" newpage="false" type="Action" icon="level-m-function-icon">
+					<action>
+							/reps/level/group/index.mvc;/reps/level/group/list.mvc;
+							/reps/level/group/toadd.mvc;/reps/level/group/add.mvc;
+							/reps/level/group/toedit.mvc;/reps/level/group/edit.mvc;
+							/reps/level/group/delete.mvc;
+							/reps/level/usergroup/list.mvc;
+							/reps/level/usergroup/save.mvc;
+							/reps/level/usergroup/delete.mvc;
+							/reps/level/usergroup/chooseuser.mvc
+					</action>
+					<nodes>
+						<node code="level020301" name="机构范围设置" showOrder="1" newpage="false" type="Operate">
+							<action>
+								/reps/level/grouporganize/list.mvc;
+								/reps/level/grouporganize/save.mvc;
+								/reps/level/grouporganize/delete.mvc;
+								/reps/level/grouporganize/chooseorganize.mvc;
+								/reps/level/grouporganize/setlower.mvc
+							</action>
+						</node>
+						<node code="level020302" name="用户范围设置" showOrder="2" newpage="false" type="Operate">
+							<action>
+								/reps/level/groupuser/list.mvc;
+								/reps/level/groupuser/save.mvc;
+								/reps/level/groupuser/delete.mvc;
+								/reps/level/groupuser/chooseuser.mvc
+							</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+	    </node>
+	</menu>
+	<consts>
+		<citem name="downloadpath" value="" />
+	</consts>
+</module>

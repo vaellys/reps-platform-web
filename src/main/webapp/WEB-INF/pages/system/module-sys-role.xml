@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="sysrole">
+	<description>角色权限管理菜单</description>
+	<menu>
+		<node code="sysrole0100" parentCode="sys020000" name="角色权限管理" showOrder="1" newpage="false" type="Action" icon="privilege-m-role-icon">
+			<action>/reps/sys/role/list.mvc</action>
+			<nodes>
+				<node code="sys020101" name="添加角色" showOrder="1" newpage="false" type="Operate">
+					<action>/reps/sys/role/toadd.mvc;/reps/sys/role/add.mvc</action>
+				</node>
+				<node code="sys020102" name="修改角色" showOrder="2" newpage="false" type="Operate">
+					<action>/reps/sys/role/toedit.mvc;/reps/sys/role/edit.mvc</action>
+				</node>
+				<node code="sys020103" name="用户分配" showOrder="3" newpage="false" type="Operate">
+					<action>/reps/sys/userrole/list.mvc;/reps/sys/userrole/save.mvc;/reps/sys/userrole/delete.mvc;/reps/sys/userrole/multiple.mvc</action>
+				</node>
+				<node code="sys020104" name="账号分配" showOrder="4" newpage="false" type="Operate">
+					<action>/reps/sys/accountrole/list.mvc;/reps/sys/accountrole/save.mvc;/reps/sys/accountrole/delete.mvc;/reps/sys/accountrole/multiple.mvc</action>
+				</node>
+				<node code="sys020105" name="删除角色" showOrder="5" newpage="false" type="Operate">
+					<action>/reps/sys/role/delete.mvc</action>
+				</node>
+			</nodes>
+		</node>
+	</menu>
+</module>
