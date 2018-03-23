@@ -25,7 +25,7 @@
 		<reps:grid id="categoryList" items="${list}" form="queryForm" var="category" pagination="${pager}" flagSeq="true">
 			<reps:gridrow>
 				<reps:gridfield title="类别名称" width="15" align="center">${category.name}</reps:gridfield>
-				<reps:gridfield title="备注" width="40">${category.description}</reps:gridfield>
+				<reps:gridfield title="备注" width="40">${category.remark}</reps:gridfield>
 				<reps:gridfield title="操作" width="25">
 					<reps:button cssClass="modify-table" messageCode="manage.action.update" action="toedit.mvc?id=${category.id}"></reps:button>
 					<reps:ajax cssClass="delete-table" messageCode="manage.action.delete" confirm="您确定要删除所选行吗？"

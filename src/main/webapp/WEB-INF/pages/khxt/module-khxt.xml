@@ -47,6 +47,32 @@
 						<node code="khxt010303" name="删除级别" showOrder="3" newpage="false" type="Operate">
 							<action>/reps/khxt/level/delete.mvc;</action>
 						</node>
+						<node code="khxt010304" name="选择级别人员" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/khxt/levelperson/list.mvc;/reps/khxt/levelperson/save.mvc;/reps/khxt/levelperson/delete.mvc;/reps/khxt/levelperson/multiple.mvc;</action>
+						</node>
+						<node code="khxt010305" name="级别详细" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/khxt/level/show.mvc</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="khxt010500" name="权重设置" showOrder="5" newpage="false" type="Action" >
+					<action>/reps/khxt/levelweight/list.mvc</action>
+					<nodes>
+						<node code="khxt010501" name="新增权重" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/khxt/levelweight/toadd.mvc;/reps/khxt/levelweight/add.mvc;</action>
+						</node>
+						<node code="khxt010502" name="修改权重" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/khxt/levelweight/toedit.mvc;/reps/khxt/levelweight/edit.mvc</action>
+						</node>
+						<node code="khxt010503" name="删除权重" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/khxt/levelweight/delete.mvc;</action>
+						</node>
+						<node code="khxt010504" name="权重详细" showOrder="4" newpage="false" type="Operate">
+							<action>/reps/khxt/levelweight/show.mvc</action>
+						</node>
+						<node code="khxt010505" name="复制权重" showOrder="5" newpage="false" type="Operate">
+							<action>/reps/khxt/levelweight/copy.mvc;</action>
+						</node>
 					</nodes>
 				</node>
 			</nodes>
@@ -54,7 +80,5 @@
 	</menu>
 	<consts>
 	<citem name="imageUploadPath" value="z:" />
-	<citem name="imagePath" value="http://223.202.64.204:50951/files" />
-	<citem name="mongoUrl" value="http://223.202.64.204:50932/jifenmongo/"></citem>
 	</consts>
 </module>
