@@ -55,6 +55,20 @@
 						</node>
 					</nodes>
 				</node>
+				<node code="khxt010400" name="考核人员分组设置" showOrder="3" newpage="false" type="Action" >
+					<action>/reps/khxt/group/list.mvc</action>
+					<nodes>
+						<node code="khxt010401" name="添加分组" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/khxt/group/toadd.mvc;/reps/khxt/group/khrlistlevel.mvc;/reps/khxt/group/bkhrlistlevel.mvc;/reps/khxt/group/add.mvc;</action>
+						</node>
+						<node code="khxt010402" name="修改分组" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/khxt/group/toedit.mvc;/reps/khxt/group/edit.mvc</action>
+						</node>
+						<node code="khxt010403" name="删除分组" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/khxt/group/delete.mvc;</action>
+						</node>
+					</nodes>
+				</node>
 				<node code="khxt010500" name="权重设置" showOrder="5" newpage="false" type="Action" >
 					<action>/reps/khxt/levelweight/list.mvc</action>
 					<nodes>
@@ -72,6 +86,32 @@
 						</node>
 						<node code="khxt010505" name="复制权重" showOrder="5" newpage="false" type="Operate">
 							<action>/reps/khxt/levelweight/copy.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+				<node code="khxt010600" name="上报月考核" showOrder="5" newpage="false" type="Action" >
+					<action>/reps/khxt/appraise/list.mvc</action>
+					<nodes>
+						<node code="khxt010601" name="添加分组" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/khxt/appraise/toadd.mvc;/reps/khxt/appraise/add.mvc;</action>
+						</node>
+					</nodes>
+				</node>
+			</nodes>
+		</node>
+		<node code="khxt030000" name="评定月考核" type="Catalog" showOrder="3" icon="basicdata" newpage="false">
+			<nodes>
+				<node code="khxt030100" name="评定月考核列表查询" showOrder="1" newpage="false" type="Action" >
+					<action>/reps/khxt/appraise/listpoint.mvc</action>
+					<nodes>
+						<node code="khxt030101" name="考核详情" showOrder="1" newpage="false" type="Operate">
+							<action>/reps/khxt/appraisepoint/show.mvc;</action>
+						</node>
+						<node code="khxt030102" name="打分" showOrder="2" newpage="false" type="Operate">
+							<action>/reps/khxt/member/appraisepoint.mvc;/reps/khxt/member/add.mvc;</action>
+						</node>
+						<node code="khxt030103" name="删除" showOrder="3" newpage="false" type="Operate">
+							<action>/reps/khxt/appraisepoint/delete.mvc;</action>
 						</node>
 					</nodes>
 				</node>

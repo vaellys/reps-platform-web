@@ -63,7 +63,7 @@
 	</filter-mapping>
 	
 	<!-- 单点登录 -->
-	<!-- <filter>
+	<filter>
 		<filter-name>clientSSOFilter</filter-name>
 		<filter-class>com.reps.platform.sso.filter.ClientSSOFilter</filter-class>
 		<init-param>
@@ -95,16 +95,16 @@
 	<filter-mapping>
 		<filter-name>chooseUserFilter</filter-name>
 		<url-pattern>/index.jsp</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping>
 
-	<!-- <filter>
+	<filter>
 		<filter-name>permissionsAuthorizationFilter</filter-name>
 		<filter-class>com.reps.core.security.PermissionsAuthorizationFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>permissionsAuthorizationFilter</filter-name>
 		<url-pattern>*.mvc</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping>
 	
 	<filter>
 		<filter-name>commonFilter</filter-name>
@@ -165,9 +165,9 @@
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
 	</listener>
 
-<!-- 	<listener>
+ 	<listener>
 		<listener-class>com.reps.sso.client.filter.SingleSignOutHttpSessionListener</listener-class>
-	</listener> -->
+	</listener>
 
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>

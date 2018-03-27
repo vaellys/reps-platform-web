@@ -72,7 +72,7 @@ table.gridtable td {
 									<td>${level.personNames }</td>
 									<td><input class="txtInput integernum required"
 										name="levelWeight${status.count }" style="width: 176px"
-										value="" levelId="${level.id }"></td>
+										value="" levelId="${level.id }" max="100" min="0"></td>
 								</tr>
 							</c:forEach>
 						</tbody>
