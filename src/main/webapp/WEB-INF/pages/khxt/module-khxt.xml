@@ -108,7 +108,7 @@
 							<action>/reps/khxt/appraisepoint/show.mvc;</action>
 						</node>
 						<node code="khxt030102" name="打分" showOrder="2" newpage="false" type="Operate">
-							<action>/reps/khxt/member/appraisepoint.mvc;/reps/khxt/member/add.mvc;</action>
+							<action>/reps/khxt/member/appraisepoint.mvc;/reps/khxt/member/add.mvc;/reps/khxt/member/workdetail.mvc;</action>
 						</node>
 						<node code="khxt030103" name="删除" showOrder="3" newpage="false" type="Operate">
 							<action>/reps/khxt/appraisepoint/delete.mvc;</action>

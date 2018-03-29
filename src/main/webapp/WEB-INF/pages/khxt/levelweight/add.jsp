@@ -21,15 +21,15 @@ table.gridtable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
+	border-color: #d0d0d0;
+	background-color: #EEE;
 }
 
 table.gridtable td {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #666666;
+	border-color: #ededed;
 	background-color: #ffffff;
 }
 </style>

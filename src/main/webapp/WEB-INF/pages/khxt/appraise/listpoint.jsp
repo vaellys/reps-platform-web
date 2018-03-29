@@ -45,12 +45,12 @@
 				<reps:gridfield title="考核状态" width="10" align="center">${sheet.name}</reps:gridfield>
 				<reps:gridfield title="考核人权重" width="25" align="center">${sheet.levelWeight.name}</reps:gridfield>
 				
-				<reps:gridfield title="操作" width="25">
+				<reps:gridfield title="操作" width="15">
 					<reps:button cssClass="detail-table" action="show.mvc?id=${sheet.id }" value="详情"></reps:button>
 					<reps:button cssClass="audit-table" value="打分" action="${ctx }/reps/khxt/member/appraisepoint.mvc?sheetId=${sheet.id}"></reps:button>
-					<reps:ajax cssClass="delete-table" messageCode="manage.action.delete" confirm="您确定要删除所选行吗？"
+					<%-- <reps:ajax cssClass="delete-table" messageCode="manage.action.delete" confirm="您确定要删除所选行吗？"
 						callBack="my" url="delete.mvc?id=${sheet.id}">
-					</reps:ajax>
+					</reps:ajax> --%>
 				</reps:gridfield>
 			</reps:gridrow>
 		</reps:grid>

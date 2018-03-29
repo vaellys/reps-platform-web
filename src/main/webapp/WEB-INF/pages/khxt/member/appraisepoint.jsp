@@ -25,15 +25,15 @@ table.gridtable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
+	border-color: #d0d0d0;
+	background-color: #EEE;
 }
 
 table.gridtable td {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #666666;
+	border-color: #ededed;
 	background-color: #ffffff;
     text-decoration: underline;
 }
@@ -56,16 +56,16 @@ table.gridtable td {
 							<tr>
 								<th>被考核人</th>
 								<c:forEach var="item" items="${items}" varStatus="status">
-								<th>${item.name}<br>（10）</th>
+								<th>${item.name}<br>（<fmt:formatNumber value="${item.point}" pattern="#00.#"/>）</th>
 								</c:forEach>
 								<th>合计</th>
 							</tr>
 							<c:forEach var="member" items="${performanceMembers}" varStatus="status">
 								<tr>
-									<td><reps:dialog cssClass="" id="detail" iframe="true" width="450"
-								 height="300" url="#" value="${member.bkhrPerson.name }"></reps:dialog></td>
+									<td><reps:dialog cssClass="" id="detail" iframe="true" width="600"
+								 height="200" url="workdetail.mvc?sheetId=${member.appraiseSheet.id }&personId=${member.bkhrPerson.id }" value="${member.bkhrPerson.name }"></reps:dialog></td>
 									<c:forEach var="item" items="${items}" varStatus="s">
-										<td><input class="txtInput moneyvalidate required" name="point${status.count }${s.count }"  value=""  itemId="${item.id }" memberId="${member.id }" max="10" min="0" onkeyup="return calculateTotalPoint($('#totalPoint${status.count }'), '${status.count }')"></td>
+										<td><input class="txtInput moneyvalidate required" name="point${status.count }${s.count }"  value=""  itemId="${item.id }" memberId="${member.id }" max="${item.point }" min="0" onkeyup="return calculateTotalPoint($('#totalPoint${status.count }'), '${status.count }')"></td>
 									</c:forEach>
 									<td><input class="txtInput moneyvalidate required" name="totalPoint${status.count }" id="totalPoint${status.count }" memberId="${member.id }" value="" readonly="readonly"></td>
 								</tr>
